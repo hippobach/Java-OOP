@@ -7,15 +7,10 @@ public class OOP {
         Student studentOne = new Student();
         Student studentTwo = new Student();
 
-        studentOne.birthday = 1994;
-        studentOne.name = "John Shelby";
-        studentOne.code = "S01";
+        studentOne.setBirthday(1994);
+        studentOne.setName("John Shelby");
+        studentOne.setCode("S01");
 
-        System.out.println("Birthday: "+studentOne.birthday);
-        System.out.println("Name: "+studentOne.name);
-        System.out.println("Code: "+studentOne.code);
-
-        Teacher teacherOne = new Teacher();
-        Teacher teacherTwo = new Teacher();
+        studentOne.showInfo();
     }
 }
