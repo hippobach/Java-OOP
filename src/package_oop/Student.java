@@ -7,7 +7,29 @@ public class Student {
     public String code;
     public int birthday;
 
-//    getters & setters
+//    constructor
+    public Student() {
+        this.name = "SV Name";
+        this.code = "SV Code";
+        this.birthday = 2000;
+    }
+
+    public Student(String vName) {
+        this.name = vName;
+    }
+
+    public Student(String vName, String vCode) {
+        this.name = vName;
+        this.code = vCode;
+    }
+
+    public Student(String name, String code, int birthday) {
+        this.name = name;
+        this.code = code;
+        this.birthday = birthday;
+    }
+
+    //    getters & setters
     public String getName() {
         return name;
     }
