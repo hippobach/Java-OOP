@@ -5,12 +5,12 @@ public class OOP {
         System.out.println("OOP Programming");
 
         Student studentOne = new Student();
-        Student studentTwo = new Student();
 
         studentOne.setBirthday(1994);
         studentOne.setName("John Shelby");
-        studentOne.setCode("S01");
-
+//        studentOne.setCode("S01");
+//        studentOne.setCode();
+        studentOne.setCode("SV", 213);
         studentOne.showInfo();
     }
 }
