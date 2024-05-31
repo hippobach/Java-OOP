@@ -24,6 +24,19 @@ public class Student {
         this.code = code;
     }
 
+    //    Overloading method
+    public void setCode() {
+        this.code = "S001";
+    }
+
+    public void setCode(int number) {
+        this.code = "S" + number;
+    }
+
+    public void setCode(String str, int number) {
+        this.code = str + number;
+    }
+
     public int getBirthday() {
         return birthday;
     }
