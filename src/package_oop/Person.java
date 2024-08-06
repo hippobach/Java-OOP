@@ -7,12 +7,12 @@ public class Person {
     public String code;
     public int birthday;
 
-    //    constructor
-//    public Person(String name, String code, int birthday) {
-//        this.name = name;
-//        this.code = code;
-//        this.birthday = birthday;
-//    }
+//        constructor
+    public Person(String name, String code, int birthday) {
+        this.name = name;
+        this.code = code;
+        this.birthday = birthday;
+    }
 
     //    getters & setters
     public String getName() {
@@ -40,6 +40,7 @@ public class Person {
     }
 
     //    Show person info
+    //    Từ khóa final dùng để chống việc ghi đè phương thức showInfo()
     public void showInfo() {
         System.out.println("Birthday: "+this.getBirthday());
         System.out.println("Name: "+this.getName());
