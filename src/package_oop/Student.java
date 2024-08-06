@@ -5,9 +5,9 @@ import java.util.Calendar;
 public class Student extends Person{
     public double score;
 
-//    public Student(String name, String code, int birthday) {
-//        super(name, code, birthday);
-//    }
+    public Student(String name, String code, int birthday) {
+        super(name, code, birthday);
+    }
 
     //    getters & setters
     public double getScore() {
@@ -16,5 +16,11 @@ public class Student extends Person{
 
     public void setScore(double score) {
         this.score = score;
+    }
+
+//    Overriding method showInfo()
+    public void showInfo() {
+        super.showInfo();
+        System.out.println("Score: "+this.getScore());
     }
 }
